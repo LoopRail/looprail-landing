@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://looprail.com/sitemap.xml
