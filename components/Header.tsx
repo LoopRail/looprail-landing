@@ -4,18 +4,18 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <header className='p-4 py-4 lg:py-8 flex justify-between items-center font-fustat'>
-      <Link href="/">
+    <header className='p-4 py-4 lg:py-8 flex justify-between items-center font-fustat' data-aos="fade-down">
+      <Link href="/" data-aos="fade-down" data-aos-delay="100">
         <Image src={'/logo.png'} alt='looprail logo' width={130} height={130} />
       </Link>
-      <nav className="lg:flex gap-6 items-center hidden lg:text-lg text-md">
+      <nav className="lg:flex gap-6 items-center hidden lg:text-lg text-md" data-aos="fade-down" data-aos-delay="200">
         <Link href="#features" className="hover:text-[#5D26FF] transition-colors">Features</Link>
         <Link href="#usecases" className="hover:text-[#5D26FF] transition-colors">Use Cases</Link>
         <Link href="#partnership" className="hover:text-[#5D26FF] transition-colors">Partnership</Link>
         <Link href="#community" className="hover:text-[#5D26FF] transition-colors">Community</Link>
       </nav>
 
-      <button className="lg:p-3 p-1.5 bg-[#5D26FF] rounded-xl text-sm lg:text-md text-white hover:bg-[#4a1ce0] transition-colors">
+      <button className="lg:p-3 p-1.5 bg-[#5D26FF] rounded-xl text-sm lg:text-md text-white hover:bg-[#4a1ce0] transition-colors" data-aos="fade-down" data-aos-delay="300">
         Join Waitlist
       </button>
     </header>

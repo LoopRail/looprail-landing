@@ -34,8 +34,8 @@ const Faq = () => {
 
   return (
     <div className="py-16 px-4 lg:px-0">
-      <h1 className='font-dm-sans font-bold leading-10 lg:leading-16 text-[36px] lg:text-[56px] mt-8 text-center'>Questions? We’ve got you covered.</h1>
-      <p className="font-fustat text-[16px] lg:text-[23px] text-center mt-2 mb-16">
+      <h1 className='font-dm-sans font-bold leading-10 lg:leading-16 text-[36px] lg:text-[56px] mt-8 text-center' data-aos="fade-up" data-aos-delay="100">Questions? We’ve got you covered.</h1>
+      <p className="font-fustat text-[16px] lg:text-[23px] text-center mt-2 mb-16" data-aos="fade-up" data-aos-delay="200">
       Everything you need to know about banking with Looprail
       </p>
       <div className="max-w-4xl mx-auto space-y-4">
@@ -43,6 +43,8 @@ const Faq = () => {
           <div 
             key={index} 
             className="bg-[#F5F5F5] rounded-xl overflow-hidden transition-all duration-300"
+            data-aos="fade-up"
+            data-aos-delay={300 + index * 100}
           >
             <button
               className="flex justify-between items-center w-full p-4 lg:p-6 text-left font-dm-sans font-bold text-[16px] lg:text-[20px] focus:outline-none"

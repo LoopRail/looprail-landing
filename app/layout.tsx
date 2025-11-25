@@ -3,8 +3,7 @@ import { Fustat, DM_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-
-
+import Script from 'next/script';
 
 const fustat = Fustat({
   variable: '--font-fustat',
@@ -46,6 +45,37 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <Script
+          src="https://unpkg.com/aos@next/dist/aos.js"
+          strategy="beforeInteractive"
+        />
+        <Script
+          id="aos-init"
+          strategy="afterInteractive"
+        >
+          {`AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: false,
+            offset: 100,
+            delay: 0,
+            anchorPlacement: 'top-bottom'
+          });
+          
+          // Refresh AOS when the page loads
+          window.addEventListener('load', function() {
+            AOS.refresh();
+          });
+          
+          // Refresh AOS on scroll for better responsiveness
+          let timeout;
+          window.addEventListener('scroll', function() {
+            clearTimeout(timeout);
+            timeout = setTimeout(function() {
+              AOS.refresh();
+            }, 100);
+          });`}
+        </Script>
       </body>
     </html>
   );
