@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from 'next/image'
-import React from 'react'
 
 const Hero = () => {
   return (
@@ -17,7 +16,7 @@ const Hero = () => {
                       data-aos-delay="200"
                   />
                   <p className="text-[15px] lg:text-[20px] ml-4 text-[#5D26FF]" data-aos="fade-right" data-aos-delay="300">
-                      Send and recieve money in 40+ countries
+                      Send and recieve money in 40+ countries 
                   </p>
               </span>
 
