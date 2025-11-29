@@ -5,7 +5,7 @@ import JoinWaitlistEmail from '@/emails/join-waitlist';
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: NextRequest) {
-  const { email } = await req.json();
+  const { email, firstName, lastName } = await req.json();
 
   if (!email) {
     return NextResponse.json({ error: 'Email is required' }, { status: 400 });
@@ -16,7 +16,7 @@ export async function POST(req: NextRequest) {
       from: 'Looprail <noreply@looprail.com>',
       to: email,
       subject: 'Welcome to the Looprail Waitlist!',
-      react: JoinWaitlistEmail({ email }),
+      react: JoinWaitlistEmail({ firstName }),
     });
 
     return NextResponse.json({ message: 'Email sent successfully' });
