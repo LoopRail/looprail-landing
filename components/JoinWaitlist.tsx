@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 
-const JoinWaitlist = ({ className }: { className?: string }) => {
+const JoinWaitlist = ({ className }: {id?:string, className?: string }) => {
   const [email, setEmail] = useState("");
   const [firstName, setFirstName] = useState("");
   const [loading, setLoading] = useState(false);
