@@ -13,7 +13,7 @@ interface JoinWaitlistEmailProps {
 }
 
 const baseUrl =
-  process.env.ENV?.toLowerCase() === "test"
+  process.env.ENV?.toLowerCase() =/= "test"
     ? `https://${process.env.VERCEL_URL}`
     : "http://localhost:3001";
 
@@ -28,7 +28,7 @@ const JoinWaitlistEmail = ({ firstName }: JoinWaitlistEmailProps) => {
         {/* Banner */}
         <Section className="w-full">
           <Img
-            src={`${baseUrl}/banner.svg`}
+            src={`${baseUrl}/banner.png`}
             alt="Looprail Banner"
             className="w-full block"
           />
