@@ -17,7 +17,7 @@ const baseUrl =
     ? `https://${process.env.VERCEL_URL}`
     : "http://localhost:3001";
 
-const JoinWaitlistEmail = ({ firstName = "Name" }: JoinWaitlistEmailProps) => {
+const JoinWaitlistEmail = ({ firstName }: JoinWaitlistEmailProps) => {
   return (
     <Html lang="en" dir="ltr">
       <Head>
@@ -48,7 +48,7 @@ const JoinWaitlistEmail = ({ firstName = "Name" }: JoinWaitlistEmailProps) => {
 
           {/* Greeting */}
           <Text className="mb-4 capitalize">
-            Hi <strong>{firstName}</strong>,
+            Hi{firstName ? <strong> {firstName}</strong> : ''},
           </Text>
 
           {/* Bold intro */}
@@ -120,6 +120,6 @@ const JoinWaitlistEmail = ({ firstName = "Name" }: JoinWaitlistEmailProps) => {
   );
 };
 
-JoinWaitlistEmail.PreviewProps = { firstName: "Andrew" };
+JoinWaitlistEmail.PreviewProps = { firstName: "Alex" };
 
 export default JoinWaitlistEmail;
