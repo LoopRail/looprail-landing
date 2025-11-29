@@ -13,7 +13,7 @@ interface JoinWaitlistEmailProps {
 }
 
 const baseUrl =
-  process.env.ENV?.toLowerCase() =/= "test"
+  process.env.ENV?.toLowerCase() === "prod"
     ? `https://${process.env.VERCEL_URL}`
     : "http://localhost:3001";
 
