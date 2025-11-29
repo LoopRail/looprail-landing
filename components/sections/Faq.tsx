@@ -14,15 +14,12 @@ const Faq = () => {
     },
     {
       question: "How long do transfer take?",
-      answer: "Yes, Looprail is protected by blockchain security and verified KYC processes. Your funds are stored in stablecoins, retaining their value without volatility risks."
+      answer: "Transfers are typically instant and completed within minutes."
     },
-    {
-      question: "Is Looprail licensed and compliant?",
-      answer: "Looprail currently supports sending and receiving money in 40+ countries, with a focus on connecting Africa to the rest of the world."
-    },
+      answer: "Yes, Looprail is fully licensed and compliant with all relevant financial regulations to ensure secure and legal operations.",
     {
       question: "Which bank can i connect with?",
-      answer: "Looprail currently supports sending and receiving money in 40+ countries, with a focus on connecting Africa to the rest of the world."
+      answer: "Looprail allows you to fund your wallet using various methods, including debit/credit cards, Google Pay, Apple Pay, and direct bank transfers. We support connections with most major banks."
     }
   ];
 
