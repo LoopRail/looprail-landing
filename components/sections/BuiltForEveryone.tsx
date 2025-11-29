@@ -1,4 +1,5 @@
 import Image from "next/image"
+import JoinWaitlist from "../JoinWaitlist"
 
 const BuiltForEveryone = () => {
   return (
@@ -31,12 +32,7 @@ const BuiltForEveryone = () => {
         </p>
 
         {/* Input  */}
-        <div className="lg:w-[30%] w-full mt-5 z-50 relative font-fustat" data-aos="fade-up" data-aos-delay="300">
-          <input type="email" placeholder='Email address' className='w-full p-3 lg:p-5 bg-white rounded-xl text-[16px]' />
-          <span className="absolute right-1 lg:right-2 inline-flex p-2 lg:p-3 rounded-xl top-1 lg:top-2 bg-[#5D26FF] text-white ">
-            Get Early Access
-          </span>
-        </div>
+        <JoinWaitlist className="lg:w-[30%] w-full mt-5 z-50" />
 
         <Image
           src={'/phones.png'}

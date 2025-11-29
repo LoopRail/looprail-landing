@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from 'next/image'
+import JoinWaitlist from '../JoinWaitlist'
 
 const Hero = () => {
   return (
@@ -33,12 +34,7 @@ const Hero = () => {
               </p>
 
               {/* Input  */}
-              <div className="lg:w-[70%] w-full relative lg:my-4 my-8 font-fustat" data-aos="fade-right" data-aos-delay="600">
-                  <input type="text" placeholder='Email address' className='w-full p-3 lg:p-5 bg-[#D7D7D780] rounded-xl text-[14px] lg:text-[16px]' />
-                  <span className="absolute top-1 right-1 lg:right-2 inline-flex p-2 text-[13px] lg:text-[16px] lg:p-3 lg:px-3  rounded-xl lg:top-2 bg-[#5D26FF] text-white  ">
-                      Get Early Access
-                  </span>
-              </div>
+              <JoinWaitlist className="lg:w-[70%] w-full relative lg:my-4 my-8" />
           </div>
           <div className="flex-1  h-full flex items-center justify-center lg:justify-end w-full">
               <img src={'/phone.png'} alt='looprail' className='  w-[88%]' data-aos="zoom-out" data-aos-delay="300" data-aos-duration="1000"/>
