@@ -40,11 +40,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${fustat.variable} ${dm_sans.variable} ${fustat.variable} antialiased container mx-auto font-fustat`}
+        className={`${fustat.variable} ${dm_sans.variable} antialiased container mx-auto font-fustat`}
       >
-        <Header />
-        {children}
-        <Footer />
+        <div className="overflow-x-hidden">
+          <Header />
+          {children}
+          <Footer />
+        </div>
         <Script
           src="https://unpkg.com/aos@next/dist/aos.js"
           strategy="beforeInteractive"
