@@ -24,7 +24,7 @@ const Faq = () => {
         "Yes, Looprail is fully licensed and compliant with all relevant financial regulations to ensure secure and legal operations.",
     },
     {
-      question: "Which bank can i connect with?",
+      question: "Which bank can I connect with?",
       answer:
         "Looprail allows you to fund your wallet using various methods, including debit/credit cards, Google Pay, Apple Pay, and direct bank transfers. We support connections with most major banks.",
     },
