@@ -70,7 +70,7 @@ const JoinWaitlist = ({ className }: { className?: string }) => {
           placeholder="Email address"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="w-full p-3 lg:p-5 bg-white rounded-xl text-[16px]"
+          className="w-full p-3 lg:p-5 bg-[#D7D7D780] rounded-xl text-[14px] lg:text-[16px]"
           required
         />
         <button
@@ -90,9 +90,7 @@ const JoinWaitlist = ({ className }: { className?: string }) => {
             className="bg-white p-6 rounded-lg shadow-lg w-full max-w-sm mx-4"
             data-aos="zoom-in"
           >
-            <h2 className="text-xl font-bold mb-4 text-black">
-              One last step
-            </h2>
+            <h2 className="text-xl font-bold mb-4 text-black">One last step</h2>
             <form onSubmit={handleSubmit}>
               <input
                 type="text"
@@ -126,4 +124,3 @@ const JoinWaitlist = ({ className }: { className?: string }) => {
 };
 
 export default JoinWaitlist;
-
