@@ -136,7 +136,7 @@ export async function POST(req: NextRequest) {
     const { data, error: resendError } = await resend.emails.send({
       from: "Looprail <noreply@looprail.xyz>",
       to: email,
-      subject: "Welcome to the Looprail Waitlist!",
+      subject: "Stop Losing 7.9% of Your Money. You’re Next.",
       react: JoinWaitlistEmail({ firstName }),
     });
 

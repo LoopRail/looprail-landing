@@ -36,63 +36,71 @@ const JoinWaitlistEmail = ({ firstName }: JoinWaitlistEmailProps) => {
 
         {/* Body */}
         <Section className="px-8 py-10 font-sans text-black leading-relaxed">
-          {/* Main heading */}
-          <Heading as="h1" className="text-[26px] font-bold mb-1">
-            Welcome to LoopRail,
-          </Heading>
-
-          {/* Subheading */}
-          <Heading as="h2" className="text-[20px] font-semibold mb-6">
-            The smart & simple way to send, build and grow.
-          </Heading>
-
           {/* Greeting */}
           <Text className="mb-4 capitalize">
             Hi{firstName ? <strong> {firstName}</strong> : ''},
           </Text>
 
-          {/* Bold intro */}
+          {/* Welcome */}
           <Text className="mb-6">
-            <strong>Welcome aboard,</strong> you’ve just taken a smart step
-            towards financial empowerment across borders.
+            <strong>Welcome to the Looprail movement!</strong>
           </Text>
 
           <Text className="mb-6">
-            Every dollar you spend helps build your credit and every transfer
-            home strengthens your financial profile.
+            You just made a smart move. By joining the waitlist, you have officially chosen to stop participating in the old system that silently taxes the African diaspora and tourists.
           </Text>
 
           <Text className="mb-6">
-            At LoopRail, sending money or making payments shouldn’t be a burden.
-            That’s why we crafted a secure, reliable, and transparent platform
-            that delivers excellence every step of the way.
+            The frustration is real: when you send money home or travel to the continent, you shouldn't lose nearly <strong>7.9%</strong> (the average remittance cost) of your hard-earned funds just to fees and bad rates. That money belongs in the local economy, not in a bank’s ledger.
           </Text>
 
-          {/* First Move Steps */}
-          <Heading as="h3" className="text-[18px] font-bold mb-3">
-            Here’s your first move:
-          </Heading>
+          <Text className="mb-6">
+            <strong>The New Way: Your Money. Your Rate. Your Africa.</strong>
+          </Text>
 
-          <Text className="mb-2">1. Download and open the Looprail app.</Text>
+          <Text className="mb-6">
+            Looprail is a stablecoin-first payment rail designed to make your money feel local, instantly.
+          </Text>
+
+          <Text className="mb-6">
+            As a waitlist member, you are now part of a select group that will get:
+          </Text>
 
           <Text className="mb-2">
-            2. Complete your profile & KYC in under 5 minutes.
+            <strong>Early Access:</strong> Be one of the very first to send and spend with Looprail when we launch the beta.
+          </Text>
+          <Text className="mb-2">
+            <strong>Exclusive Perks:</strong> Receive special introductory fee reductions and rewards (only for our pioneer members).
+          </Text>
+          <Text className="mb-6">
+            <strong>Insider Updates:</strong> Direct access to our roadmap and the story behind the technology.
           </Text>
 
           <Text className="mb-6">
-            3. Make your first transfer. Even a small one starts your credit
-            journey.
+            <strong>What Happens Next?</strong>
           </Text>
 
           <Text className="mb-6">
-            We’re excited to have you with us and we’re committed to helping you
-            turn every financial move into real opportunity, credit, control,
-            and global peace of mind.
+            We’re putting the final touches on our launch corridor (starting with Nigeria!), which is expected to open in the coming weeks/months.
+          </Text>
+
+          <Text className="mb-6">
+            In the meantime, we will send occasional, non-spammy updates to keep you informed. For the fastest news and behind-the-scenes content, join the community where we announce everything first:
+          </Text>
+
+          <Text className="mb-6">
+            <a href="https://x.com/LooprailHQ" className="text-blue-600">
+              https://x.com/LooprailHQ
+            </a>
+          </Text>
+
+          <Text className="mb-6">
+            We’re excited to put the power back in your pocket. Thank you for being a pioneer of borderless finance.
           </Text>
 
           <Text className="mb-0">
-            Need help getting started or stuck on a step? Just reply to this
-            email. We’re here 24/7.
+            Warmly,<br />
+            The Looprail Team
           </Text>
         </Section>
 
@@ -107,10 +115,7 @@ const JoinWaitlistEmail = ({ firstName }: JoinWaitlistEmailProps) => {
           </Text>
 
           <Text>
-            <strong>A note from the LoopRail Team:</strong> Thank you for
-            joining LoopRail! We’re thrilled to have you on board and look
-            forward to helping you make your financial journey smarter and
-            easier. Your feedback and questions are always welcome.
+            <strong>A note from the LoopRail Team:</strong> Thank you for joining LoopRail! We’re thrilled to have you on board and look forward to helping you make your financial journey smarter and easier. Your feedback and questions are always welcome.
           </Text>
 
           <Text className="mt-4">— The LoopRail Team</Text>
@@ -123,3 +128,4 @@ const JoinWaitlistEmail = ({ firstName }: JoinWaitlistEmailProps) => {
 JoinWaitlistEmail.PreviewProps = { firstName: "Alex" };
 
 export default JoinWaitlistEmail;
+
