@@ -46,7 +46,9 @@ export default function RootLayout({
         className={`${fustat.variable} ${dm_sans.variable} antialiased container mx-auto font-fustat overflow-x-hidden`}
       >
         <Header />
+        <div className="overflow-hidden">
         {children}
+        </div>
         <Footer />
         <Script
           src="https://unpkg.com/aos@next/dist/aos.js"
