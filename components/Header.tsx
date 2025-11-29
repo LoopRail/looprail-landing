@@ -15,9 +15,14 @@ const Header = () => {
         <Link href="#community" className="hover:text-[#5D26FF] transition-colors">Community</Link>
       </nav>
 
-      <button className="lg:p-3 p-1.5 bg-[#5D26FF] rounded-xl text-sm lg:text-md text-white hover:bg-[#4a1ce0] transition-colors" data-aos="fade-down" data-aos-delay="300">
+      <Link
+        href="#join-waitlist"
+        className="lg:p-3 p-1.5 bg-[#5D26FF] rounded-xl text-sm lg:text-md text-white hover:bg-[#4a1ce0] transition-colors"
+        data-aos="fade-down"
+        data-aos-delay="300"
+      >
         Join Waitlist
-      </button>
+      </Link>
     </header>
   )
 }
