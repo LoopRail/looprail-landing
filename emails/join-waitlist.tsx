@@ -100,8 +100,8 @@ const JoinWaitlistEmail = ({ firstName }: JoinWaitlistEmailProps) => {
         <Section className="px-8 py-6 font-sans text-gray-700 text-sm border-t border-gray-200">
           <Text className="mb-2">
             Contact us anytime at{" "}
-            <a href="mailto:support@looprail.com" className="text-blue-600">
-              support@looprail.com
+            <a href="mailto:support@looprail.xyz" className="text-blue-600">
+              support@looprail.xyz
             </a>
             .
           </Text>

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://looprail.com/sitemap.xml
+Sitemap: https://looprail.xyz/sitemap.xml

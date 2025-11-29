@@ -12,7 +12,10 @@
   "dependencies": {
     "@react-email/components": "^1.0.1",
     "@react-email/tailwind": "^2.0.1",
+    "@upstash/ratelimit": "^2.0.7",
+    "@upstash/redis": "^1.35.7",
     "aos": "^2.3.4",
+    "googleapis": "^166.0.0",
     "next": "16.0.3",
     "react": "19.2.0",
     "react-dom": "19.2.0",
