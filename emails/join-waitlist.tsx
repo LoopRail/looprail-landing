@@ -103,23 +103,6 @@ const JoinWaitlistEmail = ({ firstName }: JoinWaitlistEmailProps) => {
             The Looprail Team
           </Text>
         </Section>
-
-        {/* Footer */}
-        <Section className="px-8 py-6 font-sans text-gray-700 text-sm border-t border-gray-200">
-          <Text className="mb-2">
-            Contact us anytime at{" "}
-            <a href="mailto:support@looprail.xyz" className="text-blue-600">
-              support@looprail.xyz
-            </a>
-            .
-          </Text>
-
-          <Text>
-            <strong>A note from the LoopRail Team:</strong> Thank you for joining LoopRail! We’re thrilled to have you on board and look forward to helping you make your financial journey smarter and easier. Your feedback and questions are always welcome.
-          </Text>
-
-          <Text className="mt-4">— The LoopRail Team</Text>
-        </Section>
       </Tailwind>
     </Html>
   );
