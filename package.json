@@ -1,19 +1,20 @@
 {
   "name": "looprail",
   "version": "0.1.0",
+  "type": "module",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "email": "email dev --dir ./emails"
+    "email": "email dev --dir ./emails",
+    "send-invite": "ts-node -r dotenv/config scripts/send-telegram-invite.ts"
   },
   "dependencies": {
     "@react-email/components": "^1.0.1",
     "@react-email/tailwind": "^2.0.1",
     "@upstash/ratelimit": "^2.0.7",
-    "@upstash/redis": "^1.35.7",
     "aos": "^2.3.4",
     "googleapis": "^166.0.0",
     "next": "16.0.3",
@@ -28,9 +29,14 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@upstash/redis": "^1.36.0",
+    "commander": "^14.0.2",
+    "dotenv": "^17.2.3",
     "eslint": "^9",
     "eslint-config-next": "16.0.3",
     "tailwindcss": "^4",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.21.0",
     "typescript": "^5"
   }
 }
